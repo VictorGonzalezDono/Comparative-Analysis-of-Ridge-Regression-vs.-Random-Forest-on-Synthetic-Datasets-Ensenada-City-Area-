@@ -1,0 +1,1 @@
+# Comparative-Analysis-of-Ridge-Regression-vs.-Random-Forest-on-Synthetic-Datasets-Ensenada-City-Area-
