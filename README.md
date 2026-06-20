@@ -70,7 +70,7 @@ The project is organized modularly to ensure absolute reproducibility and clear 
 ├── notebooks/
 │   └── auditoria_simulador.ipynb              # Main Jupyter Notebook containing the ML audit pipeline
 │
-├── reports/
+├── visualizations/
 │   ├── figura1_rendimiento_m1_m2.png          # R² vs. MAE performance comparison plot
 │   ├── figura2_validacion_cruzada_estabilidad.png # 5-Fold Cross-Validation stability density distribution
 │   └── figura3_importancia_variables_rf.png   # Gini Feature Importance bar chart
