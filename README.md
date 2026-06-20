@@ -49,15 +49,32 @@ By extracting the architectural weights from the ensemble model, the pipeline id
 * **Language:** Python 3.10+
 * **Libraries:** Scikit-Learn, NumPy, Pandas, SciPy, Matplotlib, Seaborn.
 
+# AI-Driven Metrics Audit & Stochastic Simulation Verification
+
+## 📌 Project Overview
+This repository contains a rigorous statistical and machine learning audit designed to validate data lineage, measure feature interaction, and verify the internal stability of a multi-source stochastic Monte Carlo simulator. 
+
+The primary objective of this audit is to analyze how specific feature engineering strategies impact model convergence and predictive power. Specifically, we evaluate the critical performance delta between a baseline data structure (**Scenario M1**) and an integrated feature-enriched data structure (**Scenario M2**) containing the engineered variable `X11_Ingresos_Totales`.
+
+---
+
+## 📁 Repository Structure
+
+The project is organized modularly to ensure absolute reproducibility and clear separation of concerns:
+
 ```text
 ├── data/
-│   └── synthetic_metadata.md     # Feature and economic variable definitions
+│   ├── generar_muestra.py                     # Monte Carlo simulation script (data generator)
+│   └── dataset_tesis_final_corregido_9_6_26.csv # Generated simulation matrix (audit target)
+│
 ├── notebooks/
-│   └── algorithmic_exploration.ipynb # EDA & early experimentation logs
-├── src/
-│   ├── simulation_engine.py      # Stochastic Monte Carlo data generator
-│   └── model_pipeline.py         # Training, Cross-Validation & evaluation pipeline
-├── visualizations/
-│   ├── bias_variance_tradeoff.png
-│   └── feature_importance.png
-└── requirements.txt              # Standardized dependency manifest
+│   └── auditoria_simulador.ipynb              # Main Jupyter Notebook containing the ML audit pipeline
+│
+├── reports/
+│   ├── figura1_rendimiento_m1_m2.png          # R² vs. MAE performance comparison plot
+│   ├── figura2_validacion_cruzada_estabilidad.png # 5-Fold Cross-Validation stability density distribution
+│   └── figura3_importancia_variables_rf.png   # Gini Feature Importance bar chart
+│
+├── .gitignore                                 # Prevents tracking local caches and checkpoints
+├── README.md                                  # Executive summary and documentation (this file)
+└── requirements.txt                           # Pinpoint dependencies and library versions
