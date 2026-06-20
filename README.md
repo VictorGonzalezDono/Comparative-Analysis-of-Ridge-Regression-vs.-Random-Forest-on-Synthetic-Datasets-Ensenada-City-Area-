@@ -33,3 +33,7 @@ The pipeline is engineered modularly in Python 3.10:
 <p align="center">
   <img src="visualizations/bias_variance_tradeoff.png" width="550" alt="Bias-Variance Trade-off Analysis">
 </p>
+<p align="center">
+  <img src="visualizations/feature_importance.png" width="550" alt="Bias-Variance Trade-off Analysis">
+</p>
+
