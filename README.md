@@ -30,10 +30,19 @@ The pipeline is engineered modularly in Python 3.10:
 * **Parametric Constraints:** Ridge Regression demonstrated superior stability in strictly linear regimes with low $\lambda$ tuning, but suffered performance decay when handling non-linear interactions without explicit polynomial feature mappings.
 * **Non-Linear Dominance:** Random Forest successfully captured high-order interactions and operational boundaries, showing high robustness against outliers at the cost of increased computational complexity and subtle overfitting risks in sparse feature regions.
 
+## 5. Visualizations & Diagnostic Analytics
+
+### Performance Benchmarking (Bias-Variance Trade-off)
+The framework evaluates structural error dynamics across models. The comparison profiles how the parametric constraints of Ridge Regularization handle structural noise versus the high-capacity adaptability of Random Forest.
+
 <p align="center">
-  <img src="visualizations/bias_variance_tradeoff.png" width="550" alt="Bias-Variance Trade-off Analysis">
+  <img src="visualizations/bias_variance_tradeoff.png" width="600" alt="Bias Variance Trade Off">
 </p>
+
+### Feature Importance Profile
+By extracting the architectural weights from the ensemble model, the pipeline identifies the structural drivers of enterprise scaling. The empirical results isolate the Digitalization Index as a primary predictor of long-term profitability, outperforming traditional metrics like enterprise seniority.
+
 <p align="center">
-  <img src="visualizations/feature_importance.png" width="550" alt="Bias-Variance Trade-off Analysis">
+  <img src="visualizations/feature_importance.png" width="600" alt="Feature Importance">
 </p>
 
